@@ -66,7 +66,10 @@ function Home() {
               intensity={1}
             />
             <Bird />
-            <Sky />
+            <Sky 
+            isRotating={isRotating}
+            
+            />
 
             <Island
               position={islandPosition}
