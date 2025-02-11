@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
-// import { Fox } from "../models";
+import Fox from "../models/Fox";
 // import useAlert from "../hooks/useAlert";
 // import { Alert, Loader } from "../components";
 
@@ -89,7 +89,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='David'
+              placeholder='Your Name'
               required
               value={form.name}
               onChange={handleChange}
@@ -103,7 +103,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='david@gmail.com'
+              placeholder='youremail.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -117,7 +117,7 @@ const Contact = () => {
               name='message'
               rows='4'
               className='textarea'
-              placeholder="Feel free to share your thoughts here—no need to hesitate! I'm happy to hear what you have to say. 😊"
+              placeholder="Feel free to share your thoughts here—no neecd d to hesitate! I'm happy to hear what you have to say. 😊"
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -137,7 +137,7 @@ const Contact = () => {
         </form>
       </div>
 
-      {/* <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
         <Canvas
           camera={{
             position: [0, 0, 5],
@@ -156,7 +156,9 @@ const Contact = () => {
             intensity={2}
           />
 
-          <Suspense fallback={<Loader />}>
+          <Suspense 
+          // fallback={<Loader />}
+          >
             <Fox
               currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
@@ -165,7 +167,7 @@ const Contact = () => {
             />
           </Suspense>
         </Canvas>
-      </div> */}
+      </div>
     </section>
   );
 };
