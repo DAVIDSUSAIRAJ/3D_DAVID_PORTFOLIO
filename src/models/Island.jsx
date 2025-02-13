@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 
-import islandScene from "../assets/3d/island.glb";
+import islandScene from "../assets/3d/islandWorld.glb";
 
 const  Island = ({
   isRotating,
@@ -119,33 +119,36 @@ const  Island = ({
     }
   }
 
-  useEffect(() => {
-    // Add event listeners for pointer and keyboard events
-    const canvas = gl.domElement;
-    canvas.addEventListener("pointerdown", handlePointerDown);
-    canvas.addEventListener("pointerup", handlePointerUp);
-    canvas.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
-    canvas.addEventListener("touchstart", handleTouchStart);
-    canvas.addEventListener("touchend", handleTouchEnd);
-    canvas.addEventListener("touchmove", handleTouchMove);
+  // useEffect(() => {
+  //   // Add event listeners for pointer and keyboard events
+  //   const canvas = gl.domElement;
+  //   canvas.addEventListener("pointerdown", handlePointerDown);
+  //   canvas.addEventListener("pointerup", handlePointerUp);
+  //   canvas.addEventListener("pointermove", handlePointerMove);
+  //   window.addEventListener("keydown", handleKeyDown);
+  //   window.addEventListener("keyup", handleKeyUp);
+  //   canvas.addEventListener("touchstart", handleTouchStart);
+  //   canvas.addEventListener("touchend", handleTouchEnd);
+  //   canvas.addEventListener("touchmove", handleTouchMove);
 
-    // Remove event listeners when component unmounts
-    return () => {
-      canvas.removeEventListener("pointerdown", handlePointerDown);
-      canvas.removeEventListener("pointerup", handlePointerUp);
-      canvas.removeEventListener("pointermove", handlePointerMove);
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
-      canvas.removeEventListener("touchstart", handleTouchStart);
-      canvas.removeEventListener("touchend", handleTouchEnd);
-      canvas.removeEventListener("touchmove", handleTouchMove);
-    };
-  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
+  //   // Remove event listeners when component unmounts
+  //   return () => {
+  //     canvas.removeEventListener("pointerdown", handlePointerDown);
+  //     canvas.removeEventListener("pointerup", handlePointerUp);
+  //     canvas.removeEventListener("pointermove", handlePointerMove);
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //     window.removeEventListener("keyup", handleKeyUp);
+  //     canvas.removeEventListener("touchstart", handleTouchStart);
+  //     canvas.removeEventListener("touchend", handleTouchEnd);
+  //     canvas.removeEventListener("touchmove", handleTouchMove);
+  //   };
+  // }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
 
   // This function is called on each frame update
   useFrame(() => {
+    if (islandRef.current ) {
+      islandRef.current.rotation.y += 0.005; // Adjust speed for slower rotation
+    }
     // If not rotating, apply damping to slow down the rotation (smoothly)
     if (!isRotating) {
       // Apply damping factor
@@ -163,20 +166,20 @@ const  Island = ({
 
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-
+ console.log(normalizedRotation,"normalizedRotation")
       // Set the current stage based on the island's orientation
       switch (true) {
-        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-          setCurrentStage(4);
+        case normalizedRotation >= 0.00 && normalizedRotation <= 1.00:
+          setCurrentStage(1);
           break;
-        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-          setCurrentStage(3);
-          break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= 1.00 && normalizedRotation <= 2.00:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-          setCurrentStage(1);
+        case normalizedRotation >= 4.00 && normalizedRotation <= 5.00:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 5.00 && normalizedRotation <= 6.00:
+          setCurrentStage(4);
           break;
         default:
           setCurrentStage(null);
@@ -186,7 +189,7 @@ const  Island = ({
 
   return (
     <a.group ref={islandRef} {...props}>
-      <mesh
+      {/* <mesh
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
       />
@@ -213,7 +216,13 @@ const  Island = ({
       <mesh
         geometry={nodes.pCube11_rocks1_0.geometry}
         material={materials.PaletteMaterial001}
-      />
+      /> */}
+      <mesh
+          geometry={nodes.Sphere__0.geometry}
+          material={materials['Scene_-_Root']}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={28}
+        />
     </a.group>
   );
 }
