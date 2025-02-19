@@ -5,25 +5,26 @@ import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 import Fox from "../models/Fox";
+import Tiger from "../models/Tiger";
 import Loader from "../components/Loader";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const [currentAnimation, setCurrentAnimation] = useState("Howl");
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleFocus = () => setCurrentAnimation("walk");
-  const handleBlur = () => setCurrentAnimation("idle");
+  const handleFocus = () => setCurrentAnimation("Walk Fast");
+  const handleBlur = () => setCurrentAnimation("Howl");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     setLoading(true);
-    setCurrentAnimation("hit");
+    setCurrentAnimation("Run");
 
     emailjs
       .send(
@@ -46,7 +47,7 @@ const Contact = () => {
             autoClose: 3000,
           });
           setTimeout(() => {
-            setCurrentAnimation("idle");
+            setCurrentAnimation("Howl");
             setForm({
               name: "",
               email: "",
@@ -153,11 +154,14 @@ const Contact = () => {
           <Suspense 
           fallback={<Loader />}
           >
-            <Fox
+            {/* <Fox
               currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
               rotation={[12.629, -0.6, 0]}
               scale={[0.5, 0.5, 0.5]}
+            /> */}
+            <Tiger 
+             currentAnimation={currentAnimation}
             />
           </Suspense>
         </Canvas>
