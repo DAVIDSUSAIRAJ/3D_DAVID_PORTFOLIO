@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-
-import scene from "../assets/3d/plane_model.glb";
-
+import scene from "../../public/models/plane_model.glb";
 const PlaneModel = ({isRotating,...props}) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(scene);
