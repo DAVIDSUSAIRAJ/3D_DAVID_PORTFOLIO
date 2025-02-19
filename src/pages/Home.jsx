@@ -5,7 +5,7 @@ import sakura from "../assets/sakura.mp3";
 import loveit from "../assets/loveit.mp3";
 import HomeInfo from "../components/HomeInfo";
 import { soundoff, soundon } from "../assets/icons";
-import Sky from "../models/sky";
+import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import PlaneModel from "../models/PlaneModel";
