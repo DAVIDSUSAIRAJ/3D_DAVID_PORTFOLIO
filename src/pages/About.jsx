@@ -22,7 +22,7 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
           Summary: I am a web developer proficient in both front-end (HTML5,
-          CSS3, JavaScript, React.js,Next.js, Redux) and back-end (Node.js,
+          CSS3, JavaScript, React.js,Next.js,Three.js,Redux) and back-end (Node.js,
           Express.js, MongoDB,david-unique-id(npm custom ID generator))
           technologies. I also have experience with version control (Git,
           GitHub), project management (Azure DevOps), and UI frameworks
