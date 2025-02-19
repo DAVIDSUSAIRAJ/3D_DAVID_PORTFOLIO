@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import sakura from "../assets/sakura.mp3";
+import loveit from "../assets/loveit.mp3";
 import HomeInfo from "../components/HomeInfo";
 import { soundoff, soundon } from "../assets/icons";
 import Sky from "../models/sky";
@@ -14,7 +15,7 @@ import  bubbleImg from "../assets/images/bubble.png";
 
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
+  const audioRef = useRef(new Audio(loveit));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
