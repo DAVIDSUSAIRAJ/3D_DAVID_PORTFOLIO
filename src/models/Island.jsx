@@ -8,7 +8,7 @@ import islandScene from "../assets/3d/islandWorld.glb";
 const  Island = ({
   isRotating,
   setIsRotating,
-  setCurrentStage,
+  // setCurrentStage,
   currentFocusPoint,
   ...props
 }) =>{
@@ -168,22 +168,22 @@ const  Island = ({
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
  console.log(normalizedRotation,"normalizedRotation")
       // Set the current stage based on the island's orientation
-      switch (true) {
-        case normalizedRotation >= 0.00 && normalizedRotation <= 1.00:
-          setCurrentStage(1);
-          break;
-        case normalizedRotation >= 1.00 && normalizedRotation <= 2.00:
-          setCurrentStage(2);
-          break;
-        case normalizedRotation >= 4.00 && normalizedRotation <= 5.00:
-          setCurrentStage(3);
-          break;
-        case normalizedRotation >= 5.00 && normalizedRotation <= 6.00:
-          setCurrentStage(4);
-          break;
-        default:
-          setCurrentStage(null);
-      }
+      // switch (true) {
+      //   case normalizedRotation >= 0.00 && normalizedRotation <= 1.00:
+      //     setCurrentStage(1);
+      //     break;
+      //   case normalizedRotation >= 1.00 && normalizedRotation <= 2.00:
+      //     setCurrentStage(2);
+      //     break;
+      //   case normalizedRotation >= 4.00 && normalizedRotation <= 5.00:
+      //     setCurrentStage(3);
+      //     break;
+      //   case normalizedRotation >= 5.00 && normalizedRotation <= 6.00:
+      //     setCurrentStage(4);
+      //     break;
+      //   default:
+      //     setCurrentStage(null);
+      // }
     }
   });
 

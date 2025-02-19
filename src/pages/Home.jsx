@@ -9,6 +9,7 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
+import  bubbleImg from "../assets/images/bubble.png";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -60,10 +61,28 @@ const Home = () => {
 
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
+  const handleNextSlide = ()=>{
+    if(currentStage === 4){
+      setCurrentStage(1);
+    }else{
+    setCurrentStage(currentStage + 1);
+    }
+  }
+  const handlePreviousSlide = ()=>{
+    if(currentStage === 1){
+      setCurrentStage(4);
+    }else{
+    setCurrentStage(currentStage - 1);
+    }
+  }
 
   return (
     <section className='w-full h-screen relative'>
-      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+      <div className=" w-full absolute left-0 right-0 z-10 flex justify-between items-center top-52 slider">
+        <div><span className="font-extrabold p-5 text-xl cursor-pointer" onClick={handleNextSlide}>&raquo;</span></div>
+        <div><span className="font-extrabold p-5 text-xl cursor-pointer" onClick={handlePreviousSlide}>&laquo;</span></div>
+      </div>
+            <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -94,7 +113,7 @@ const Home = () => {
           <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
-            setCurrentStage={setCurrentStage}
+            // setCurrentStage={setCurrentStage}
             position={islandPosition}
             rotation={[0.1, 4.7077, 0]}
             scale={islandScale}
@@ -108,7 +127,7 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className='absolute bottom-2 left-2'>
+      <div className='absolute bottom-2 left-2 '>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
           alt='jukebox'
@@ -116,6 +135,10 @@ const Home = () => {
           className='w-10 h-10 cursor-pointer object-contain'
         />
       </div>
+      <img src = {bubbleImg} className="absolute top-10 left-10 hero--animate__bubble"  width={150} height={150}/>
+      <img src = {bubbleImg} className="absolute bottom-10 left-10 hero--animate__bubble"  width={150} height={150}/>
+      <img src = {bubbleImg} className="absolute bottom-10 right-10 hero--animate__bubble"  width={150} height={150}/>
+      <img src = {bubbleImg} className="absolute top-10 right-10 hero--animate__bubble"  width={150} height={150}/>
     </section>
   );
 };
