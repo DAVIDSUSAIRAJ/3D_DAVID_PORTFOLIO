@@ -77,7 +77,7 @@ const About = () => {
                 iconStyle={{ background: experience.iconBg }}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
-                    SSATD
+                    TD
                   </div>
                 }
                 contentStyle={{

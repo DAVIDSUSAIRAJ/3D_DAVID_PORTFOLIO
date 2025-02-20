@@ -111,7 +111,7 @@ const Contact = () => {
               name='message'
               rows='4'
               className='textarea'
-              placeholder="Feel free to share your thoughts here—no neecd d to hesitate! I'm happy to hear what you have to say. 😊"
+              placeholder="Feel free to share your thoughts here—no need to hesitate! I'm happy to hear what you have to say. 😊"
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
