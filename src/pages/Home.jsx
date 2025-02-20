@@ -16,6 +16,7 @@ import  bubbleImg from "../assets/images/bubble.png";
 
 const Home = () => {
   const audioRef = useRef(new Audio(loveit));
+  const isMobileViewRef = useRef(null);
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
@@ -38,11 +39,11 @@ const Home = () => {
 
     // If screen width is less than 768px, adjust the scale and position
     if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
+      screenScale = [1, 1, 1];
+      screenPosition = [0, -1.0, 0];
     } else {
       screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
+      screenPosition = [0, -1, -4];
     }
 
     return [screenScale, screenPosition];
@@ -52,11 +53,13 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
-      screenPosition = [0, -6.5, -43.4];
+      screenScale = [1, 1, 1];
+      screenPosition = [-2, -6, -75.4];
+      isMobileViewRef.current = true;
     } else {
       screenScale = [1, 1, 1];
-      screenPosition = [0, -6.5, -43.4];
+      screenPosition = [0, -1.0, -43.4];
+      isMobileViewRef.current = false;
     }
 
     return [screenScale, screenPosition];
@@ -161,26 +164,26 @@ const Home = () => {
       <img
         src={bubbleImg}
         className="absolute top-10 left-10 hero--animate__bubble"
-        width={150}
-        height={150}
+        width={`${ isMobileViewRef.current ? 75:150}`}
+        height={`${ isMobileViewRef.current ? 75:150}`}
       />
       <img
         src={bubbleImg}
         className="absolute bottom-10 left-10 hero--animate__bubble"
-        width={150}
-        height={150}
+        width={`${ isMobileViewRef.current ? 75:150}`}
+        height={`${ isMobileViewRef.current ? 75:150}`}
       />
       <img
         src={bubbleImg}
         className="absolute bottom-10 right-10 hero--animate__bubble"
-        width={150}
-        height={150}
+        width={`${ isMobileViewRef.current ? 75:150}`}
+        height={`${ isMobileViewRef.current ? 75:150}`}
       />
       <img
         src={bubbleImg}
         className="absolute top-10 right-10 hero--animate__bubble"
-        width={150}
-        height={150}
+        width={`${ isMobileViewRef.current ? 75:150}`}
+        height={`${ isMobileViewRef.current ? 75:150}`}
       />
     </section>
   );
