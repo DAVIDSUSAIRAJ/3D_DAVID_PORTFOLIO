@@ -54,7 +54,7 @@ const Home = () => {
 
     if (window.innerWidth < 768) {
       screenScale = [1, 1, 1];
-      screenPosition = [-2, -6, -75.4];
+      screenPosition = [-1, -6, -75.4];
       isMobileViewRef.current = true;
     } else {
       screenScale = [1, 1, 1];
