@@ -151,9 +151,17 @@ export const projects = [
     // Your Projects
     {
       iconUrl: '', // Add appropriate icon
+      theme: 'btn-back-green',
+      name: '3D-Portfolio Application',
+      description: 'A personal 3d-portfolio website showcasing projects, skills, and experiences.',
+      link: 'https://3-d-david-portfolio-c7dw.vercel.app/',
+  },
+    
+    {
+      iconUrl: '', // Add appropriate icon
       theme: 'btn-back-pink',
       name: 'Portfolio Application',
-      description: 'A personal portfolio website showcasing projects, skills, and experiences.',
+      description: 'A personal 2d-portfolio website showcasing projects, skills, and experiences.',
       link: 'https://david-portfolio-two.vercel.app/',
   },
   {
