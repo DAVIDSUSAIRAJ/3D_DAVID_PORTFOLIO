@@ -31,11 +31,12 @@ const Contact = () => {
        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "David susairaj",
-          from_email: form.email,
-          to_email: "davidsusairaj1996@gmail.com",
-          message: form.message,
+          client_name: form.name,
+          owner_name: "David susairaj",
+          client_email: form.email,
+          owner_email: "davidsusairaj1996@gmail.com",
+          client_message: form.message,
+          reply_to_client: form.email,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
