@@ -160,7 +160,7 @@ export const projects = [
     {
       iconUrl: '', // Add appropriate icon
       theme: 'btn-back-pink',
-      name: 'Portfolio Application',
+      name: '2D-Portfolio Application',
       description: 'A personal 2d-portfolio website showcasing projects, skills, and experiences.',
       link: 'https://david-portfolio-two.vercel.app/',
   },
