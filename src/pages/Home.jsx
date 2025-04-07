@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
+import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 
 import sakura from "../assets/sakura.mp3";
 import loveit from "../assets/loveit.mp3";
@@ -153,14 +154,23 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className="absolute bottom-2 left-2 ">
-        <img
-          src={!isPlayingMusic ? soundoff : soundon}
-          alt="jukebox"
-          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
-          className="w-10 h-10 cursor-pointer object-contain"
-        />
-      </div>
+
+
+<div className="absolute bottom-4 left-4 z-50">
+  <div
+    onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+    title={isPlayingMusic ? "Mute Music" : "Play Music"}
+    className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm text-white flex items-center justify-center cursor-pointer hover:bg-black/60 transition duration-300 shadow-lg"
+  >
+    {isPlayingMusic ? (
+      <FaVolumeUp size={22} />
+    ) : (
+      <FaVolumeMute size={22} />
+    )}
+  </div>
+</div>
+
+
       <img
         src={bubbleImg}
         className="absolute top-10 left-10 hero--animate__bubble"

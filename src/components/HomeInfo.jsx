@@ -9,7 +9,7 @@ const HomeInfo = ({ currentStage }) => {
         <p className="font-medium sm:text-xl text-center">
           Hi, I'm
           <span className="font-semibold mx-2 text-white">David</span>
-          👋 A Software Engineer from India.
+          👋 A MERN Stack Developer from India.
         </p>
 
         <div className="neo-brutalism-white neo-btn_home">
