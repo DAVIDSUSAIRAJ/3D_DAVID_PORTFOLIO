@@ -154,7 +154,7 @@ export const projects = [
       theme: 'btn-back-green',
       name: '3D-Portfolio Application',
       description: 'A personal 3d-portfolio website showcasing projects, skills, and experiences.',
-      link: 'https://3-d-david-portfolio-c7dw.vercel.app/',
+      link: 'https://3-d-david-portfolio-ysab.vercel.app/',
   },
     
     {
