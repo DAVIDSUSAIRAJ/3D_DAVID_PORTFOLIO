@@ -60,6 +60,8 @@ const About = () => {
         <h3 className="subhead-text">Honors & Awards.</h3>
         <div className="mt-3 mb-3 flex flex-col gap-3 text-slate-500">
           <p>2021 National Champion in Silambam.</p>
+          <p>2024 Certified State Referee in Silambam.</p>
+           <p>Author of கிறுக்கனின் பயணத் தத்துவங்கள் (Publishing on May 10, 2025)</p>
         </div>
         <h3 className="subhead-text">Work Experience.</h3>
         <div className="mt-3 mb-3 flex flex-col gap-3 text-slate-500">
