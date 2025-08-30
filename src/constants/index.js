@@ -153,7 +153,7 @@ export const projects = [
   {
     iconUrl: '', // Add appropriate icon
     theme: 'btn-back-pink',
-    name: 'SwiftTalk – Secure Real-Time Chat & Media Sharing',
+    name: 'SwiftTalk – Real-Time Chat & Media Sharing',
     description: 'SwiftTalk is a real-time chat app built with React and Supabase. It supports text, audio/video calls, voice messages, and file sharing.',
     link: 'https://chat-osbe.onrender.com/',
   },
