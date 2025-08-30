@@ -157,6 +157,14 @@ export const projects = [
       description: 'SwiftTalk is a real-time chat app built with React and Supabase. It supports text, audio/video calls, voice messages, and file sharing.',
       link: 'https://chat-osbe.onrender.com/',
   },
+  {
+    iconUrl: '', // Add appropriate icon (e.g., book, globe, or language icon)
+    theme: 'btn-back-yellow',
+    name: 'Mad Wanderings – Multilingual Book Web App',
+    description: 'Mad Wanderings is a React-based book app with multilingual support (Tamil, English, Hindi, Telugu, Malayalam), smooth chapter navigation, responsive UI, and a Chatbase chatbot for interactive reading.',
+    link: 'https://madwanderings.vercel.app/',
+  },
+  
     {
       iconUrl: '', // Add appropriate icon
       theme: 'btn-back-green',
