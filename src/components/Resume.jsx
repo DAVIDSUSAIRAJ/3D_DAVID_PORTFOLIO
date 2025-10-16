@@ -6,6 +6,9 @@ const Resume = () => {
   return (
     <div className="resume-container" id="resume_pdf_container">
       <div className="resume-wrapper" id="resume_content">
+        {/* Top Header - RESUME */}
+        <h1 className="resume-main-title">RESUME</h1>
+        
         <div className="resume-layout">
           {/* Left Sidebar - White Section */}
           <div className="resume-sidebar">
@@ -21,23 +24,23 @@ const Resume = () => {
             {/* Social Links */}
             <div className="social-links">
               <a href="https://github.com/DAVIDSUSAIRAJ" target="_blank" rel="noopener noreferrer" className="social-link-item">
-                <FaGithub className="social-icon" />
+                <FaGithub className="social-icon icon-github" />
                 <span>https://github.com/DAVIDSUSAIRAJ</span>
               </a>
               <a href="https://www.linkedin.com/in/davidsusairaj" target="_blank" rel="noopener noreferrer" className="social-link-item">
-                <FaLinkedin className="social-icon" />
+                <FaLinkedin className="social-icon icon-linkedin" />
                 <span>https://www.linkedin.com/in/davidsusairaj</span>
               </a>
               <a href="mailto:davidsusairaj1996@gmail.com" className="social-link-item">
-                <FaEnvelope className="social-icon" />
+                <FaEnvelope className="social-icon icon-email" />
                 <span>davidsusairaj1996@gmail.com</span>
               </a>
               <a href="tel:+919345163305" className="social-link-item">
-                <FaPhone className="social-icon" />
+                <FaPhone className="social-icon icon-phone icon-phone-rotate" />
                 <span>9345163305</span>
               </a>
               <a href="https://stackoverflow.com/users/28158685/david-susairaj" target="_blank" rel="noopener noreferrer" className="social-link-item">
-                <FaStackOverflow className="social-icon" />
+                <FaStackOverflow className="social-icon icon-stackoverflow" />
                 <span>stackoverflow</span>
               </a>
             </div>
@@ -86,8 +89,6 @@ const Resume = () => {
 
           {/* Right Content - White Section */}
           <div className="resume-content">
-            <h1 className="resume-main-title">RESUME</h1>
-
             {/* Summary Section */}
             <div className="content-section">
               <h2 className="section-title">SUMMARY:</h2>

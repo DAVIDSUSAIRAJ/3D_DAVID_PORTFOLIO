@@ -20,11 +20,13 @@ export const downloadCV = async () => {
 
     // Capture options with onclone to show hidden element
     const captureOptions = {
-      scale: 2,
+      scale: 3,
       useCORS: true,
       logging: false,
       backgroundColor: '#ffffff',
       windowWidth: 1200,
+      allowTaint: true,
+      foreignObjectRendering: false,
       onclone: (docClone) => {
         const targetElement = docClone.getElementById('resume_pdf_container');
         if (targetElement) {
@@ -33,6 +35,13 @@ export const downloadCV = async () => {
           targetElement.style.position = 'relative';
           targetElement.style.left = '0';
         }
+        
+        // Ensure transforms are rendered properly
+        const rotatedIcons = docClone.querySelectorAll('.icon-phone-rotate');
+        rotatedIcons.forEach(icon => {
+          icon.style.transform = 'rotate(90deg)';
+          icon.style.display = 'inline-block';
+        });
       },
     };
 
@@ -62,6 +71,17 @@ export const downloadCV = async () => {
       const yOffset = 0;
       pdf.addImage(imgData, 'PNG', 0, yOffset, imgWidth, imgHeight, '', 'FAST');
     }
+
+//     // 1. Blob → URL → open
+// const pdfBlob = pdf.output('blob');
+// const pdfUrl = URL.createObjectURL(pdfBlob);
+// window.open(pdfUrl, '_blank');
+// setTimeout(() => URL.revokeObjectURL(pdfUrl), 60000);
+
+
+// // 2. jsPDF shortcut
+// window.open(pdf.output('bloburl'), '_blank');
+
 
     // Save the PDF
     pdf.save('David_Susairaj_CV.pdf');
