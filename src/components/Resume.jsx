@@ -39,10 +39,10 @@ const Resume = () => {
                 <FaPhone className="social-icon icon-phone icon-phone-rotate" />
                 <span>9345163305</span>
               </a>
-              <a href="https://stackoverflow.com/users/28158685/david-susairaj" target="_blank" rel="noopener noreferrer" className="social-link-item">
+              {/* <a href="https://stackoverflow.com/users/28158685/david-susairaj" target="_blank" rel="noopener noreferrer" className="social-link-item">
                 <FaStackOverflow className="social-icon icon-stackoverflow" />
                 <span>stackoverflow</span>
-              </a>
+              </a> */}
             </div>
 
             {/* Skills Section */}
