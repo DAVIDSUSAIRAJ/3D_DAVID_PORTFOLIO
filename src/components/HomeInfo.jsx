@@ -8,7 +8,7 @@ const HomeInfo = ({ currentStage }) => {
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
           Hi, I'm
-          <span className="font-semibold mx-2 text-white">David</span>
+          <span className="font-semibold mx-2 text-white">David Susairaj</span>
           👋 A MERN Stack Developer from India.
         </p>
 
