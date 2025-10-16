@@ -13,6 +13,7 @@ import PlaneModel from "../models/PlaneModel";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
 import  bubbleImg from "../assets/images/bubble.png";
+import Resume from "../components/Resume";
 
 
 const Home = () => {
@@ -84,6 +85,7 @@ const Home = () => {
   }
 
   return (
+    <>
     <section className="w-full h-screen relative">
       <div className=" w-full absolute left-0 right-0 z-10 flex justify-between items-center top-52 slider">
         <div>
@@ -196,6 +198,9 @@ const Home = () => {
         height={`${ isMobileViewRef.current ? 75:150}`}
       />
     </section>
+
+    <Resume />
+    </>
   );
 };
 
