@@ -1,0 +1,13 @@
+# robots.txt for David Susairaj 3D Portfolio
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /projects
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://3-d-david-portfolio-ysab.vercel.app/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 10
+
