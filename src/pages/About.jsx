@@ -8,6 +8,28 @@ import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
+  // Calculate experience from March 2022
+  const calculateExperience = () => {
+    const startDate = new Date(2022, 2); // March 2022 (month is 0-indexed)
+    const today = new Date();
+    
+    let years = today.getFullYear() - startDate.getFullYear();
+    let months = today.getMonth() - startDate.getMonth();
+    
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    
+    if (years > 0 && months > 0) {
+      return `${years} year${years > 1 ? 's' : ''} ${months} month${months > 1 ? 's' : ''}`;
+    } else if (years > 0) {
+      return `${years} year${years > 1 ? 's' : ''}`;
+    } else {
+      return `${months} month${months > 1 ? 's' : ''}`;
+    }
+  };
+
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -66,7 +88,7 @@ const About = () => {
         <h3 className="subhead-text">Work Experience.</h3>
         <div className="mt-3 mb-3 flex flex-col gap-3 text-slate-500">
           <p>
-            React developer specializing 3.0 years in bug fixing and ui
+            React developer specializing {calculateExperience()} in bug fixing and ui
             development, enhancing projects stability and user experience.
           </p>
         </div>
