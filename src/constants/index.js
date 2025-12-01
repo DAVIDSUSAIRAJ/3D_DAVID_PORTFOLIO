@@ -23,7 +23,8 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    gemini
 } from "../assets/icons";
 
 export const skills = [
@@ -109,6 +110,11 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
+  {
+    imageUrl: gemini,
+    name: "Gemini AI",
+    type: "AI/ML",
+  },
 ];
 
 export const experiences = [
@@ -124,6 +130,7 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Bug fixing and performance optimization to enhance application stability and user experience.",
+      "AI/ML Integration – Developed conversational AI chatbot using Google Gemini LLM with RAG (Retrieval-Augmented Generation) for context-aware responses.",
     ],
   },
   

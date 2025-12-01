@@ -1,8 +1,30 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaStackOverflow } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import "../styles/resume.css";
 import davidImage from "../assets/images/david.jpg";
 
 const Resume = () => {
+  // Calculate experience from March 2022
+  const calculateExperience = () => {
+    const startDate = new Date(2022, 2); // March 2022 (month is 0-indexed)
+    const today = new Date();
+    
+    let years = today.getFullYear() - startDate.getFullYear();
+    let months = today.getMonth() - startDate.getMonth();
+    
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    
+    if (years > 0 && months > 0) {
+      return `${years}.${months}`;
+    } else if (years > 0) {
+      return `${years}.0`;
+    } else {
+      return `0.${months}`;
+    }
+  };
+
   return (
     <div className="resume-container" id="resume_pdf_container">
       <div className="resume-wrapper" id="resume_content">
@@ -84,6 +106,14 @@ const Resume = () => {
                   <li>AZURE DEVOPS</li>
                 </ul>
               </div>
+
+              <div className="skill-group">
+                <h3 className="skill-group-title">AI/ML :</h3>
+                <ul className="skill-list">
+                  <li>GEMINI LLM</li>
+                  <li>RAG</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -97,7 +127,8 @@ const Resume = () => {
                 I am a web developer proficient in both front-end <strong>(HTML5, CSS3, JavaScript, React.js, Next.js, Redux)</strong> and 
                 back-end <strong>(Node.js, Express.js, MongoDB, david-unique-id(npm custom ID generator))</strong> technologies. 
                 I also have experience with version control <strong>(Git, GitHub)</strong>, project management <strong>(Azure DevOps)</strong>, 
-                and UI frameworks <strong>(Material-UI, Bootstrap)</strong>, and testing frameworks(<strong>Jest</strong>).
+                UI frameworks <strong>(Material-UI, Bootstrap)</strong>, testing frameworks (<strong>Jest</strong>), and 
+                AI/ML Integration <strong>(Google Gemini LLM, RAG Architecture, Conversational AI Chatbots)</strong>.
               </p>
             </div>
 
@@ -106,7 +137,7 @@ const Resume = () => {
               <h2 className="section-title">EXPERIENCE:</h2>
               <div className="section-underline"></div>
               <p className="section-text">
-                React developer specializing <strong>4.0</strong> years in bug fixing and ui development, 
+                React developer specializing <strong>{calculateExperience()}</strong> years in bug fixing and ui development, 
                 enhancing projects stability and user experience.
               </p>
             </div>
