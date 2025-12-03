@@ -168,7 +168,7 @@ export const projects = [
     iconUrl: gemini, // AI/ML project icon
     theme: 'btn-back-yellow',
     name: 'Mad Wanderings – AI-Powered Multilingual Book Chatbot',
-    description: 'Built a conversational AI chatbot using React + Express.js with Google Gemini LLM integration. Features RAG (Retrieval-Augmented Generation) for accurate book-based responses, multilingual support (Tamil, English, Hindi, Telugu, Malayalam), and smart context-aware AI conversations.',
+    description: 'Built a conversational AI chatbot using React + Express.js with Google Gemini LLM integration. Features RAG (Retrieval-Augmented Generation) for accurate book-based responses, multilingual support (Tamil, English, Hindi, Telugu, Malayalam, German), and smart context-aware AI conversations.',
     link: 'https://madwanderings.vercel.app/',
   },
   {

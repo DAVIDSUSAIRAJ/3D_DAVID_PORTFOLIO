@@ -175,7 +175,7 @@ const Resume = () => {
 
                 <div className="project-item">
                   <strong>Mad Wanderings – AI-Powered Multilingual Book Chatbot:</strong><br />
-                  <span className="tech-stack">Technology: React, Express.js, Google Gemini LLM, RAG Architecture, Conversational AI, Multilingual (Tamil, English, Hindi, Telugu, Malayalam)</span><br />
+                  <span className="tech-stack">Technology: React, Express.js, Google Gemini LLM, RAG Architecture, Conversational AI, Multilingual (Tamil, English, Hindi, Telugu, Malayalam, German)</span><br />
                   <a href="https://madwanderings.vercel.app/" target="_blank" rel="noopener noreferrer">https://madwanderings.vercel.app/</a>
                 </div>
 
