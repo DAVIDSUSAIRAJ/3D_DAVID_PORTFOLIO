@@ -165,10 +165,10 @@ export const projects = [
     link: 'https://chat-osbe.onrender.com/',
   },
   {
-    iconUrl: '', // Add appropriate icon (e.g., book, globe, or language icon)
+    iconUrl: gemini, // AI/ML project icon
     theme: 'btn-back-yellow',
-    name: 'Mad Wanderings – Multilingual Book Web App',
-    description: 'Mad Wanderings is a React-based book app with multilingual support (Tamil, English, Hindi, Telugu, Malayalam), smooth chapter navigation, responsive UI, and a Chatbase chatbot for interactive reading.',
+    name: 'Mad Wanderings – AI-Powered Multilingual Book Chatbot',
+    description: 'Built a conversational AI chatbot using React + Express.js with Google Gemini LLM integration. Features RAG (Retrieval-Augmented Generation) for accurate book-based responses, multilingual support (Tamil, English, Hindi, Telugu, Malayalam), and smart context-aware AI conversations.',
     link: 'https://madwanderings.vercel.app/',
   },
   {

@@ -137,8 +137,9 @@ const Resume = () => {
               <h2 className="section-title">EXPERIENCE:</h2>
               <div className="section-underline"></div>
               <p className="section-text">
-                React developer specializing <strong>{calculateExperience()}</strong> years in bug fixing and ui development, 
-                enhancing projects stability and user experience.
+                React developer with <strong>{calculateExperience()}</strong> years experience in full-stack development, 
+                AI/ML integration, and UI development. Built conversational AI chatbots using <strong>Google Gemini LLM</strong> with 
+                <strong> RAG Architecture</strong>, enhancing project stability and user experience.
               </p>
             </div>
 
@@ -173,8 +174,8 @@ const Resume = () => {
                 </div>
 
                 <div className="project-item">
-                  <strong>Mad Wanderings – Multilingual Book Web App:</strong><br />
-                  <span className="tech-stack">Technology: React, Chatbase (Chatbot), Multilingual Support (Tamil, English, Hindi, Telugu, Malayalam)</span><br />
+                  <strong>Mad Wanderings – AI-Powered Multilingual Book Chatbot:</strong><br />
+                  <span className="tech-stack">Technology: React, Express.js, Google Gemini LLM, RAG Architecture, Conversational AI, Multilingual (Tamil, English, Hindi, Telugu, Malayalam)</span><br />
                   <a href="https://madwanderings.vercel.app/" target="_blank" rel="noopener noreferrer">https://madwanderings.vercel.app/</a>
                 </div>
 
