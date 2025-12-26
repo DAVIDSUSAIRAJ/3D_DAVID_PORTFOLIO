@@ -49,7 +49,7 @@ const About = () => {
           technologies. I also have experience with version control (Git,
           GitHub), project management (Azure DevOps), UI frameworks
           (Material-UI, Bootstrap), testing frameworks (Jest), and AI/ML Integration
-          (Google Gemini LLM, RAG Architecture, Conversational AI Chatbots).
+          (Google Gemini LLM, Qwen LLM, RAG Architecture, Conversational AI Chatbots, Visual AI Workflow Builders).
         </p>
       </div>
 
@@ -91,7 +91,8 @@ const About = () => {
           <p>
             MERN Stack Developer with {calculateExperience()} experience in full-stack development 
             and AI/ML integration. Built conversational AI chatbots using Google Gemini LLM 
-            with RAG Architecture, enhancing project stability and user experience.
+            with RAG Architecture. Developed visual AI workflow builder using React Flow, Zustand, 
+            and Qwen LLM for creating context-aware AI pipelines, enhancing project stability and user experience.
           </p>
         </div>
         <div className="mt-12 flex">

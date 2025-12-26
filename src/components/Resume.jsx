@@ -80,6 +80,7 @@ const Resume = () => {
                   <li>REACT JS</li>
                   <li>NEXT JS</li>
                   <li>REDUX</li>
+                  <li>ZUSTAND</li>
                   <li>TYPESCRIPT</li>
                   <li>SASS</li>
                   <li>MATERIAL UI</li>
@@ -111,6 +112,7 @@ const Resume = () => {
                 <h3 className="skill-group-title">AI/ML :</h3>
                 <ul className="skill-list">
                   <li>GEMINI LLM</li>
+                  <li>QWEN LLM</li>
                   <li>RAG</li>
                 </ul>
               </div>
@@ -124,11 +126,11 @@ const Resume = () => {
               <h2 className="section-title">SUMMARY:</h2>
               <div className="section-underline"></div>
               <p className="section-text">
-                I am a web developer proficient in both front-end <strong>(HTML5, CSS3, JavaScript, React.js, Next.js, Redux)</strong> and 
+                I am a web developer proficient in both front-end <strong>(HTML5, CSS3, JavaScript, React.js, Next.js, Redux, Zustand)</strong> and 
                 back-end <strong>(Node.js, Express.js, MongoDB, david-unique-id(npm custom ID generator))</strong> technologies. 
                 I also have experience with version control <strong>(Git, GitHub)</strong>, project management <strong>(Azure DevOps)</strong>, 
                 UI frameworks <strong>(Material-UI, Bootstrap)</strong>, testing frameworks (<strong>Jest</strong>), and 
-                AI/ML Integration <strong>(Google Gemini LLM, RAG Architecture, Conversational AI Chatbots)</strong>.
+                AI/ML Integration <strong>(Google Gemini LLM, Qwen LLM, RAG Architecture, Conversational AI Chatbots, Visual AI Workflow Builders)</strong>.
               </p>
             </div>
 
@@ -139,7 +141,8 @@ const Resume = () => {
               <p className="section-text">
                 React developer with <strong>{calculateExperience()}</strong> years experience in full-stack development, 
                 AI/ML integration, and UI development. Built conversational AI chatbots using <strong>Google Gemini LLM</strong> with 
-                <strong> RAG Architecture</strong>, enhancing project stability and user experience.
+                <strong> RAG Architecture</strong>. Developed visual AI workflow builder using <strong>React Flow, Zustand, and Qwen LLM</strong>, 
+                enhancing project stability and user experience.
               </p>
             </div>
 
@@ -157,7 +160,9 @@ const Resume = () => {
               <h2 className="section-title">HONORS & AWARDS:</h2>
               <div className="section-underline"></div>
               <p className="section-text">
-                2021 <strong>National Champion</strong> in Silambam.
+                2021 <strong>National Champion</strong> in Silambam.<br />
+                2024 <strong>Certified State Referee</strong> in Silambam.<br />
+                <strong>Author</strong> of &quot;Philosophies of a Madman&apos;s Wanderings&quot;.
               </p>
             </div>
 
@@ -167,6 +172,12 @@ const Resume = () => {
               <div className="section-underline"></div>
               
               <div className="projects-container">
+                <div className="project-item">
+                  <strong>AI Flow Runner – Visual AI Workflow Builder:</strong><br />
+                  <span className="tech-stack">Technology: React, React Flow, Zustand, React DnD, Node.js (Express), Qwen LLM</span><br />
+                  <a href="https://ai-flow-runner.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-flow-runner.vercel.app/</a>
+                </div>
+
                 <div className="project-item">
                   <strong>SwiftTalk – Real-Time Chat & Media Sharing:</strong><br />
                   <span className="tech-stack">Technology: React, Supabase (Realtime), WebRTC, Audio/Video Calls, File Sharing</span><br />
@@ -207,12 +218,6 @@ const Resume = () => {
                   <strong>Quiz App:</strong><br />
                   <span className="tech-stack">Technology: HTML5, Sass, React.js</span><br />
                   <a href="https://davidsusairaj.github.io/quiz-react-app/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/quiz-react-app/</a>
-                </div>
-
-                <div className="project-item">
-                  <strong>Todo App:</strong><br />
-                  <span className="tech-stack">Technology: HTML5, Sass, React.js</span><br />
-                  <a href="https://davidsusairaj.github.io/todo-react-app/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/todo-react-app/</a>
                 </div>
 
                 <div className="project-item">

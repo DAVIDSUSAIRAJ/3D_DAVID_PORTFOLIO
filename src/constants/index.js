@@ -24,7 +24,8 @@ import {
     tailwindcss,
     threads,
     typescript,
-    gemini
+    gemini,
+    qwen
 } from "../assets/icons";
 
 export const skills = [
@@ -131,6 +132,7 @@ export const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Bug fixing and performance optimization to enhance application stability and user experience.",
       "AI/ML Integration – Developed conversational AI chatbot using Google Gemini LLM with RAG (Retrieval-Augmented Generation) for context-aware responses.",
+      "Visual AI Workflow Builder – Built AI Flow Runner using React Flow, Zustand, and Qwen LLM for drag-and-drop AI pipeline creation.",
     ],
   },
   
@@ -157,6 +159,13 @@ export const socialLinks = [
 export const projects = [
   // Your Projects
 
+  {
+    iconUrl: qwen,
+    theme: 'btn-back-yellow',
+    name: 'AI Flow Runner – Visual AI Workflow Builder',
+    description: 'A visual AI workflow builder that lets you create, arrange, and run AI pipelines. Enter your mindset, select output language, arrange the flow, and get context-aware AI-generated quotes based on your emotion.',
+    link: 'https://ai-flow-runner.vercel.app/',
+  },
   {
     iconUrl: '', // Add appropriate icon
     theme: 'btn-back-pink',
