@@ -100,31 +100,23 @@ const Resume = () => {
               </div>
 
               <div className="skill-group">
-                <h3 className="skill-group-title">AI/AUTOMATION :</h3>
+                <h3 className="skill-group-title">AI/ML :</h3>
                 <ul className="skill-list">
+                  <li>GEMINI LLM</li>
                   <li>QWEN LLM</li>
+                  <li>RAG ARCHITECTURE</li>
                   <li>AI WORKFLOW BUILDER</li>
                   <li>REACT FLOW</li>
-                  <li>ZUSTAND</li>
                 </ul>
               </div>
 
               <div className="skill-group">
-                <h3 className="skill-group-title">TESTING/TOOLS</h3>
+                <h3 className="skill-group-title">TESTING/TOOLS :</h3>
                 <ul className="skill-list">
                   <li>JEST</li>
                   <li>GIT</li>
                   <li>GITHUB</li>
                   <li>AZURE DEVOPS</li>
-                </ul>
-              </div>
-
-              <div className="skill-group">
-                <h3 className="skill-group-title">AI/ML :</h3>
-                <ul className="skill-list">
-                  <li>GEMINI LLM</li>
-                  <li>QWEN LLM</li>
-                  <li>RAG</li>
                 </ul>
               </div>
             </div>
