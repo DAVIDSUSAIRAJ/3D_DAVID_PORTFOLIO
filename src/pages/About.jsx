@@ -21,12 +21,11 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Summary: I am a web developer proficient in both front-end (HTML5,
-          CSS3, JavaScript, React.js,Next.js,Three.js,Redux) and back-end (Node.js,
-          Express.js, MongoDB,david-unique-id(npm custom ID generator))
-          technologies. I also have experience with version control (Git,
-          GitHub), project management (Azure DevOps), and UI frameworks
-          (Material-UI, Bootstrap),and testing frameworks(Jest)
+          Summary: I am a full-stack web developer with hands-on experience in AI/automation technologies, proficient in front-end 
+          (React.js, Next.js, Three.js, Redux, TypeScript), back-end (Node.js, Express.js, MongoDB, MCP), 
+          and AI workflow development (Qwen LLM, Google Gemini, React Flow, Zustand). I have built visual AI workflow builders, 
+          LLM-driven chatbots with RAG architecture, and real-time applications. Experienced with version control (Git, GitHub), 
+          project management (Azure DevOps), UI frameworks (Material-UI, Bootstrap), and testing frameworks (Jest).
         </p>
       </div>
 

@@ -26,7 +26,7 @@ const HomeInfo = ({ currentStage }) => {
           <p className="font-medium sm:text-xl text-center">
             Hi, I'm
             <span className="font-semibold mx-2 text-white">David Susairaj</span>
-            👋 A MERN Stack Developer from India.
+            👋 A MERN Stack Developer building AI-powered applications from India.
           </p>
 
           <div className="neo-brutalism-white neo-btn_home">

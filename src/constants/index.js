@@ -152,6 +152,20 @@ export const projects = [
 
   {
     iconUrl: '', // Add appropriate icon
+    theme: 'btn-back-blue',
+    name: 'AI Flow Runner – Visual AI Workflow Builder',
+    description: 'A visual AI workflow builder that enables drag-and-drop creation of AI pipelines. Features context-aware real-time analysis, structured automation with email + PDF generation. Built with React, React Flow, Zustand, React DnD, Node.js (Express), and Qwen LLM.',
+    link: 'https://ai-flow-runner.vercel.app/',
+  },
+  {
+    iconUrl: '', // Add appropriate icon
+    theme: 'btn-back-green',
+    name: 'MCP Server – Model Context Protocol Tools',
+    description: 'Custom MCP server implementation with Create and Fetch tools for record management. Deep understanding of MCP tool registration and execution flow. Deployed on Render with SSE (Server-Sent Events) support.',
+    link: 'https://mcp-server-mv7m.onrender.com/sse',
+  },
+  {
+    iconUrl: '', // Add appropriate icon
     theme: 'btn-back-pink',
     name: 'SwiftTalk – Real-Time Chat & Media Sharing',
     description: 'SwiftTalk is a real-time chat app built with React and Supabase. It supports text, audio/video calls, voice messages, and file sharing.',
@@ -160,8 +174,8 @@ export const projects = [
   {
     iconUrl: '', // Add appropriate icon (e.g., book, globe, or language icon)
     theme: 'btn-back-yellow',
-    name: 'Mad Wanderings – Multilingual Book Web App',
-    description: 'Mad Wanderings is a React-based book app with multilingual support (Tamil, English, Hindi, Telugu, Malayalam), smooth chapter navigation, responsive UI, and a Chatbase chatbot for interactive reading.',
+    name: 'Mad Wanderings – Multilingual Book Web App with AI Chatbot',
+    description: 'React-based book app with custom AI chatbot powered by Google Gemini LLM and RAG architecture for accurate book-based responses. Features multilingual support (Tamil, English, Hindi, Telugu, Malayalam), smooth chapter navigation, and conversational AI for interactive reading.',
     link: 'https://madwanderings.vercel.app/',
   },
   {

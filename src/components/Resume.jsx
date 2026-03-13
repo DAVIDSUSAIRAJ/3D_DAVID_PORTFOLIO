@@ -72,6 +72,17 @@ const Resume = () => {
                   <li>EXPRESS JS</li>
                   <li>MONGODB</li>
                   <li>david-unique-id(npm)</li>
+                  <li>MCP (Model Context Protocol)</li>
+                </ul>
+              </div>
+
+              <div className="skill-group">
+                <h3 className="skill-group-title">AI/AUTOMATION :</h3>
+                <ul className="skill-list">
+                  <li>QWEN LLM</li>
+                  <li>AI WORKFLOW BUILDER</li>
+                  <li>REACT FLOW</li>
+                  <li>ZUSTAND</li>
                 </ul>
               </div>
 
@@ -94,10 +105,11 @@ const Resume = () => {
               <h2 className="section-title">SUMMARY:</h2>
               <div className="section-underline"></div>
               <p className="section-text">
-                I am a web developer proficient in both front-end <strong>(HTML5, CSS3, JavaScript, React.js, Next.js, Redux)</strong> and 
-                back-end <strong>(Node.js, Express.js, MongoDB, david-unique-id(npm custom ID generator))</strong> technologies. 
-                I also have experience with version control <strong>(Git, GitHub)</strong>, project management <strong>(Azure DevOps)</strong>, 
-                and UI frameworks <strong>(Material-UI, Bootstrap)</strong>, and testing frameworks(<strong>Jest</strong>).
+                I am a full-stack web developer with hands-on experience in AI/automation, proficient in front-end <strong>(React.js, Next.js, Redux, TypeScript)</strong>, 
+                back-end <strong>(Node.js, Express.js, MongoDB, MCP)</strong>, and <strong>AI workflow development (Qwen LLM, Google Gemini, React Flow, Zustand)</strong>. 
+                Built visual AI workflow builders, LLM-driven chatbots with RAG architecture, and real-time applications. 
+                Skilled in version control <strong>(Git, GitHub)</strong>, project management <strong>(Azure DevOps)</strong>, 
+                UI frameworks <strong>(Material-UI, Bootstrap)</strong>, and testing <strong>(Jest)</strong>.
               </p>
             </div>
 
@@ -136,14 +148,27 @@ const Resume = () => {
               
               <div className="projects-container">
                 <div className="project-item">
+                  <strong>AI Flow Runner – Visual AI Workflow Builder:</strong><br />
+                  <span className="tech-stack">Technology: React, React Flow, Zustand, React DnD, Node.js (Express), Qwen LLM</span><br />
+                  <a href="https://ai-flow-runner.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-flow-runner.vercel.app/</a>
+                </div>
+
+                <div className="project-item">
+                  <strong>MCP Server – Model Context Protocol Tools:</strong><br />
+                  <span className="tech-stack">Technology: Node.js, MCP (Model Context Protocol)</span><br />
+                  <span className="tech-stack">Custom MCP server with Create & Fetch tools for record management</span><br />
+                  <a href="https://mcp-server-mv7m.onrender.com/sse" target="_blank" rel="noopener noreferrer">https://mcp-server-mv7m.onrender.com/sse</a>
+                </div>
+
+                <div className="project-item">
                   <strong>SwiftTalk – Real-Time Chat & Media Sharing:</strong><br />
                   <span className="tech-stack">Technology: React, Supabase (Realtime), WebRTC, Audio/Video Calls, File Sharing</span><br />
                   <a href="https://chat-osbe.onrender.com/" target="_blank" rel="noopener noreferrer">https://chat-osbe.onrender.com/</a>
                 </div>
 
                 <div className="project-item">
-                  <strong>Mad Wanderings – Multilingual Book Web App:</strong><br />
-                  <span className="tech-stack">Technology: React, Chatbase (Chatbot), Multilingual Support (Tamil, English, Hindi, Telugu, Malayalam)</span><br />
+                  <strong>Mad Wanderings – Multilingual Book Web App with AI Chatbot:</strong><br />
+                  <span className="tech-stack">Technology: React, Express.js, Google Gemini LLM, RAG (Retrieval Augmented Generation), Conversational AI, Multilingual Support (Tamil, English, Hindi, Telugu, Malayalam)</span><br />
                   <a href="https://madwanderings.vercel.app/" target="_blank" rel="noopener noreferrer">https://madwanderings.vercel.app/</a>
                 </div>
 
@@ -169,30 +194,6 @@ const Resume = () => {
                   <strong>Mini eCommerce Platform:</strong><br />
                   <span className="tech-stack">Technology: MERN</span><br />
                   <a href="https://mini-ecommerce-project-6mai.vercel.app/" target="_blank" rel="noopener noreferrer">https://mini-ecommerce-project-6mai.vercel.app/</a>
-                </div>
-
-                <div className="project-item">
-                  <strong>Quiz App:</strong><br />
-                  <span className="tech-stack">Technology: HTML5, Sass, React.js</span><br />
-                  <a href="https://davidsusairaj.github.io/quiz-react-app/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/quiz-react-app/</a>
-                </div>
-
-                <div className="project-item">
-                  <strong>Todo App:</strong><br />
-                  <span className="tech-stack">Technology: HTML5, Sass, React.js</span><br />
-                  <a href="https://davidsusairaj.github.io/todo-react-app/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/todo-react-app/</a>
-                </div>
-
-                <div className="project-item">
-                  <strong>RoadmapMaster – Planning Tool:</strong><br />
-                  <span className="tech-stack">Technology: HTML5, Sass, React.js</span><br />
-                  <a href="https://davidsusairaj.github.io/web-design-react/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/web-design-react/</a>
-                </div>
-
-                <div className="project-item">
-                  <strong>Journey Learning Project:</strong><br />
-                  <span className="tech-stack">Technology: HTML5, Sass, JavaScript</span><br />
-                  <a href="https://davidsusairaj.github.io/Web-first-Design/" target="_blank" rel="noopener noreferrer">https://davidsusairaj.github.io/Web-first-Design/</a>
                 </div>
               </div>
             </div>
