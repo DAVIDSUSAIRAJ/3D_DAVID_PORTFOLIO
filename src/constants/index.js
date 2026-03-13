@@ -161,13 +161,6 @@ export const projects = [
 
   {
     iconUrl: qwen,
-    theme: 'btn-back-yellow',
-    name: 'AI Flow Runner – Visual AI Workflow Builder',
-    description: 'A visual AI workflow builder that lets you create, arrange, and run AI pipelines. Enter your mindset, select output language, arrange the flow, and get context-aware AI-generated quotes based on your emotion.',
-    link: 'https://ai-flow-runner.vercel.app/',
-  },
-  {
-    iconUrl: '', // Add appropriate icon
     theme: 'btn-back-blue',
     name: 'AI Flow Runner – Visual AI Workflow Builder',
     description: 'A visual AI workflow builder that enables drag-and-drop creation of AI pipelines. Features context-aware real-time analysis, structured automation with email + PDF generation. Built with React, React Flow, Zustand, React DnD, Node.js (Express), and Qwen LLM.',
