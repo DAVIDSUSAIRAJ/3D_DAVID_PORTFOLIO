@@ -8,6 +8,28 @@ import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
+  // Calculate experience from March 2022
+  const calculateExperience = () => {
+    const startDate = new Date(2022, 2); // March 2022 (month is 0-indexed)
+    const today = new Date();
+    
+    let years = today.getFullYear() - startDate.getFullYear();
+    let months = today.getMonth() - startDate.getMonth();
+    
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    
+    if (years > 0 && months > 0) {
+      return `${years} year${years > 1 ? 's' : ''} ${months} month${months > 1 ? 's' : ''}`;
+    } else if (years > 0) {
+      return `${years} year${years > 1 ? 's' : ''}`;
+    } else {
+      return `${months} month${months > 1 ? 's' : ''}`;
+    }
+  };
+
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -22,9 +44,9 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
           Summary: I am a full-stack web developer with hands-on experience in AI/automation technologies, proficient in front-end 
-          (React.js, Next.js, Three.js, Redux, TypeScript), back-end (Node.js, Express.js, MongoDB, MCP), 
-          and AI workflow development (Qwen LLM, Google Gemini, React Flow, Zustand). I have built visual AI workflow builders, 
-          LLM-driven chatbots with RAG architecture, and real-time applications. Experienced with version control (Git, GitHub), 
+          (React.js, Next.js, Three.js, Redux, TypeScript, Zustand), back-end (Node.js, Express.js, MongoDB, MCP, david-unique-id (npm)), 
+          and AI workflow development (Qwen LLM, Google Gemini LLM, React Flow, RAG Architecture). I have built visual AI workflow builders, 
+          LLM-driven chatbots with RAG architecture, conversational AI, and real-time applications. Experienced with version control (Git, GitHub), 
           project management (Azure DevOps), UI frameworks (Material-UI, Bootstrap), and testing frameworks (Jest).
         </p>
       </div>
@@ -60,13 +82,15 @@ const About = () => {
         <div className="mt-3 mb-3 flex flex-col gap-3 text-slate-500">
           <p>2021 National Champion in Silambam.</p>
           <p>2024 Certified State Referee in Silambam.</p>
-           <p>Author of கிறுக்கனின் பயணத் தத்துவங்கள் (Publishing on May 10, 2025)</p>
+           <p>Author of கிறுக்கனின் பயணத் தத்துவங்கள் (Published May 10, 2025) — with AI-powered multilingual chatbot.</p>
         </div>
         <h3 className="subhead-text">Work Experience.</h3>
         <div className="mt-3 mb-3 flex flex-col gap-3 text-slate-500">
           <p>
-            React developer specializing 3.0 years in bug fixing and ui
-            development, enhancing projects stability and user experience.
+            MERN Stack Developer with {calculateExperience()} experience in full-stack development 
+            and AI/ML integration. Built conversational AI chatbots using Google Gemini LLM 
+            with RAG Architecture. Developed visual AI workflow builder using React Flow, Zustand, 
+            and Qwen LLM for creating context-aware AI pipelines, enhancing project stability and user experience.
           </p>
         </div>
         <div className="mt-12 flex">

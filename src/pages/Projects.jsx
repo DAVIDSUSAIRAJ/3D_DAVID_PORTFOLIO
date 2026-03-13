@@ -13,7 +13,7 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-      I've worked on numerous projects over the years, each one reflecting my passion for development and innovation. Many of them are open-source, so if you find something that interests you, feel free to explore the codebase and contribute your ideas for future improvements. Your feedback and collaboration are always welcome!
+      I've worked on numerous projects over the years, from full-stack MERN applications to AI-powered chatbots using Google Gemini LLM & RAG Architecture. Many of them are open-source, so if you find something that interests you, feel free to explore the codebase and contribute your ideas. Your feedback and collaboration are always welcome!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
@@ -22,11 +22,13 @@ const Projects = () => {
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
-                {/* <img
-                  src={project.iconUrl}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
-                /> */}
+                {project.iconUrl && (
+                  <img
+                    src={project.iconUrl}
+                    alt={project.name}
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                )}
               </div>
             </div>
 

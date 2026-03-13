@@ -23,7 +23,9 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    gemini,
+    qwen
 } from "../assets/icons";
 
 export const skills = [
@@ -109,6 +111,11 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
+  {
+    imageUrl: gemini,
+    name: "Gemini AI",
+    type: "AI/ML",
+  },
 ];
 
 export const experiences = [
@@ -124,6 +131,8 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Bug fixing and performance optimization to enhance application stability and user experience.",
+      "AI/ML Integration – Developed conversational AI chatbot using Google Gemini LLM with RAG (Retrieval-Augmented Generation) for context-aware responses.",
+      "Visual AI Workflow Builder – Built AI Flow Runner using React Flow, Zustand, and Qwen LLM for drag-and-drop AI pipeline creation.",
     ],
   },
   
@@ -151,6 +160,13 @@ export const projects = [
   // Your Projects
 
   {
+    iconUrl: qwen,
+    theme: 'btn-back-yellow',
+    name: 'AI Flow Runner – Visual AI Workflow Builder',
+    description: 'A visual AI workflow builder that lets you create, arrange, and run AI pipelines. Enter your mindset, select output language, arrange the flow, and get context-aware AI-generated quotes based on your emotion.',
+    link: 'https://ai-flow-runner.vercel.app/',
+  },
+  {
     iconUrl: '', // Add appropriate icon
     theme: 'btn-back-blue',
     name: 'AI Flow Runner – Visual AI Workflow Builder',
@@ -172,10 +188,10 @@ export const projects = [
     link: 'https://chat-osbe.onrender.com/',
   },
   {
-    iconUrl: '', // Add appropriate icon (e.g., book, globe, or language icon)
+    iconUrl: gemini, // AI/ML project icon
     theme: 'btn-back-yellow',
-    name: 'Mad Wanderings – Multilingual Book Web App with AI Chatbot',
-    description: 'React-based book app with custom AI chatbot powered by Google Gemini LLM and RAG architecture for accurate book-based responses. Features multilingual support (Tamil, English, Hindi, Telugu, Malayalam), smooth chapter navigation, and conversational AI for interactive reading.',
+    name: 'Mad Wanderings – AI-Powered Multilingual Book Chatbot',
+    description: 'Built a conversational AI chatbot using React + Express.js with Google Gemini LLM integration. Features RAG (Retrieval-Augmented Generation) for accurate book-based responses, multilingual support (Tamil, English, Hindi, Telugu, Malayalam, German), and smart context-aware AI conversations.',
     link: 'https://madwanderings.vercel.app/',
   },
   {

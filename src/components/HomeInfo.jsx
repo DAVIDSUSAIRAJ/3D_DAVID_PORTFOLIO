@@ -111,8 +111,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-medium text-center sm:text-xl">
-          Led multiple projects to success over the years. <br /> Curious about
-          the impact?
+          Led multiple projects including AI-powered chatbots <br /> with Gemini LLM & RAG. Curious about the impact?
         </p>
 
         <Link to="/projects" className="neo-brutalism-white neo-btn">
